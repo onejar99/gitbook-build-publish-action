@@ -40,6 +40,7 @@ ls -al
 cp -rf $BOOK_DIR/* /gitbook/
 sh /root/custom-entrypoint.sh
 checkIfErr
+cp -rf /gitbook/_book $BOOK_DIR/
 echo '[INFO] Finished to build Gitbook static files.'
 ls -al
 
