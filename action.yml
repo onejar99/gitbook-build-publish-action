@@ -1,5 +1,9 @@
 name: 'Build and Publish GitBook'
 description: 'Build GitBook static site files and deploy to GitHub Pages.'
+author: 'onejar99 (OneJar)'
+branding:
+  icon: 'book'
+  color: 'green'
 runs:
   using: 'docker'
   image: 'Dockerfile'
