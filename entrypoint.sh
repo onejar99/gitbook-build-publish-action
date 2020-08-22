@@ -38,7 +38,9 @@ echo '[INFO] Start to build Gitbook static files...'
 
 ls -al
 cp -rf $BOOK_DIR/* /gitbook/
-sh /root/custom-entrypoint.sh
+sh /root/custom-entrypoint.sh "gitbook init && gitbook install && gitbook build"
+checkIfErr
+ls -al /gitbook/_book
 checkIfErr
 cp -rf /gitbook/_book $BOOK_DIR/
 echo '[INFO] Finished to build Gitbook static files.'
