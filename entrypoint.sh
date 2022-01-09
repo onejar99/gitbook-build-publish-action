@@ -37,6 +37,9 @@ echo '[INFO] Start to build Gitbook static files...'
 
 ls -al
 cp -rf $BOOK_DIR/* /gitbook/
+cd /gitbook
+npm i colors@1.4.0 # for fixing gitbook-plugin-anchor-navigation-ex dependency issue (issue#3)
+cd -
 sh /root/custom-entrypoint.sh "gitbook init && gitbook install && gitbook build"
 checkIfErr
 ls -al /gitbook/_book
