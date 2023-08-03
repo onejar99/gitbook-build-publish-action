@@ -32,5 +32,5 @@ jobs:
       uses: actions/checkout@v2.3.1
 
     - name: Build and Deploy 🚀
-      uses: onejar99/gitbook-build-publish-action@v1.0.2
+      uses: onejar99/gitbook-build-publish-action@v1.0.3
 ```
